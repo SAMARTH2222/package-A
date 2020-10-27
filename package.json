@@ -1,0 +1,33 @@
+{
+  "name": "package-A",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./node_modules/compiler-temp/bin/skillPackageCompile.js --outDir xyz",
+    "build2": "acc --outDir jkjkjk",
+    "new": "ask new",
+    "clean": "del build"
+  },
+  "dependencies": {
+    "commander": "^6.2.0",
+    "del": "^6.0.0",
+    "ask-cli": "2.18.1",
+    "compiler-temp": "1.0.3"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^8.1.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SAMARTH2222/package-A.git"
+  },
+  "author": {
+    "name": "Samarth Kanakkumar Dave"
+  },
+  "bugs": {
+    "url": "https://github.com/SAMARTH2222/package-A/issues"
+  },
+  "homepage": "https://github.com/SAMARTH2222/package-A#readme",
+  "description": ""
+}
