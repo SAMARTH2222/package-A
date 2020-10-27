@@ -1,0 +1,27 @@
+{
+  "askcliResourcesVersion": "2020-03-31",
+  "profiles": {
+    "default": {
+      "skillMetadata": {
+        "src": "./skill-package",
+        "compilerOptions": {
+          "srcDir": "./src",
+          "outDir": "./build"
+        }
+      },
+      "code": {
+        "default": {
+          "src": "./lambda"
+        }
+      },
+      "skillInfrastructure": {
+        "userConfig": {
+          "runtime": "nodejs10.x",
+          "handler": "index.handler",
+          "awsRegion": "us-east-1"
+        },
+        "type": "@ask-cli/lambda-deployer"
+      }
+    }
+  }
+}

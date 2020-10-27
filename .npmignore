@@ -1,1 +1,6 @@
-*.xml
+src/
+*.acdl
+metadata/
+*.lst
+logs/
+*.log

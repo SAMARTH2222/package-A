@@ -3,16 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "node ./node_modules/compiler-temp/bin/skillPackageCompile.js --outDir xyz",
-    "build2": "acc --outDir jkjkjk",
-    "new": "ask new",
-    "clean": "del build"
+    "clean": "del ./build",
+    "build": "node ./node_modules/compiler-temp/bin/skillPackageCompile.js",
+    "build2": "acc --outDir jkjkjk"
   },
   "dependencies": {
-    "commander": "^6.2.0",
-    "del": "^6.0.0",
-    "ask-cli": "2.18.1",
-    "compiler-temp": "1.0.3"
+    "compiler-temp": "1.0.3",
+    "del-cli": "^3.0.1"
   },
   "license": "ISC",
   "devDependencies": {

@@ -1,2 +1,5 @@
 .DS_Store
-*.doc
+metadata/
+*.lst
+logs/
+*.log
