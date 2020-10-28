@@ -1,14 +1,16 @@
 {
   "name": "skill-package-a",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "scripts": {
     "clean": "del ./build",
     "build": "node ./node_modules/compiler-temp/bin/skillPackageCompile.js",
-    "build2": "acc --outDir jkjkjk"
+    "build2": "ask-compile --outDir jkjkjk",
+    "bundle": "node ./node_modules/compiler-temp/bin/skillPackageBundle.js",
+    "bundle2": "ask-bundle --outDir jkjkjk"
   },
   "dependencies": {
-    "compiler-temp": "1.0.3",
+    "compiler-temp": "^1.0.5",
     "del-cli": "^3.0.1"
   },
   "license": "ISC",

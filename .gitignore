@@ -3,3 +3,4 @@ metadata/
 *.lst
 logs/
 *.log
+.ask/
