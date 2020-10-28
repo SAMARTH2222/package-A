@@ -71,3 +71,6 @@ fse.copySync(smapiPackageCompiledSrcPath, smapiPackageSampleDialogsPath, { overw
 
 del.sync([tmpPath, smapiPackageAskPath, smapiPackageBuildPath, smapiPackageLambdaPath, smapiPackageInfrastructurePath, smapiPackageSrcPath,
   smapiPackageGitIgnorePath, smapiPackageNpmIgnorePath, smapiPackageAskResourcesPath, smapiPackageLicensePath, smapiPackagePackageJsonsPath], { force: true });
+
+  console.log("\n\n!!! Bundling successful !!! \n\n");
+  console.log("Created SMAPI Package to deploy at ./.ask/smapi-package \n\n");

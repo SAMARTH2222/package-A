@@ -26,8 +26,6 @@ program
   .option('--outDir <outDir>', 'output directory');
  
 program.parse(process.argv);
- 
-//console.log('out dir:' + program.outDir + '\n');
 
 fs.mkdirSync(buildPath, { recursive: true }, (err) => {
   if (err) console.error("Error: " + err);
@@ -59,7 +57,6 @@ fs.readdir(srcPath, (err, files) => {
     fs.writeFile(compiledSrcPath + "/" + fileName + askirExtension, "{}", (err) => {
       if (err) return console.error("Error: " + err);
     });
-    console.log(file);
 
     fs.appendFile(inputFilePath, srcPath + "/" + file + "\n", function (err) {
       if (err) return console.error("Error: " + err);
@@ -74,3 +71,6 @@ fs.readdir(srcPath, (err, files) => {
 fs.writeFile(consoleLogsPath, "!!! Compilation Successful !!!", (err) => {
   if (err) return console.error("Error: " + err);
 });
+
+console.log("\n\n!!! Compilation successful !!! \n\n");
+console.log("Created built resources in ./build folder\n\n");
