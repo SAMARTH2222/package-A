@@ -1,3 +1,4 @@
+*lock.json
 src/
 *.acdl
 metadata/
@@ -5,3 +6,4 @@ metadata/
 logs/
 *.log
 .ask/
+node_modules/

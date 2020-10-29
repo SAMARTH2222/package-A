@@ -1,6 +1,9 @@
 .DS_Store
+*lock.json
 metadata/
 *.lst
 logs/
 *.log
 .ask/
+node_modules/
+
