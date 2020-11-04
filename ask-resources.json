@@ -3,11 +3,7 @@
   "profiles": {
     "default": {
       "skillMetadata": {
-        "src": "./skill-package",
-        "compilerOptions": {
-          "srcDir": "./src",
-          "outDir": "./build"
-        }
+        "src": "./skill-package"
       },
       "code": {
         "default": {
