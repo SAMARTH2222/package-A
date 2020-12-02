@@ -1,4 +1,0 @@
-namespace com.skill.packageA.types
-
-type Temperature {}
-

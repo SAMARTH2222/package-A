@@ -3,21 +3,21 @@
   "profiles": {
     "default": {
       "skillMetadata": {
-        "src": "./skill-package"
-      },
-      "code": {
-        "default": {
-          "src": "./lambda"
-        }
-      },
-      "skillInfrastructure": {
-        "userConfig": {
-          "runtime": "nodejs10.x",
-          "handler": "index.handler",
-          "awsRegion": "us-east-1"
-        },
-        "type": "@ask-cli/lambda-deployer"
+        "src": "./.ask/skill-package"
       }
+    }
+  },
+  "commandOptions": {
+    "compile": {
+      "inputDir": "./src",
+      "outputDir": "./build"
+    },
+    "synthesize": {
+      "synthesisType": "DEPLOY_PACKAGE",
+      "inputDir": ".",
+      "outputDir": "./.ask/skill-package",
+      "excludes": ["./LICENSE.txt", "./ask-resources.json", "./ask-compiler-metadata.json", "./package.json", "./package-lock.json", "./.gitignore", "./.npmignore", "./src/",
+      		"./build/logs", "./lambda", "./infrastructure/", "./node_modules/", "./.ask", "./build", "./.git", "./.DS_Store", "./.project", "./.settings/"]
     }
   }
 }

@@ -1,9 +1,7 @@
-.DS_Store
-metadata/
-*.lst
-logs/
-*.log
+build/
 .ask/
 node_modules/
 package-lock.json
-
+.DS_Store
+.project
+.settings/

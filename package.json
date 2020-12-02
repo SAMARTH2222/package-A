@@ -1,18 +1,17 @@
 {
   "name": "skill-package-a",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "index.js",
-  "scripts": {
-    "clean": "del ./build",
-    "build": "ask-compile",
-    "bundle": "ask-bundle",
-    "deploy": "ask deploy",
-    "export": "ask smapi export-package"
-  },
   "devDependencies": {
-    "compiler-temp": "latest",
-    "del-cli": "^3.0.1",
-    "ask-cli": "^2.19.3"
+    "del-cli": "^3.0.1"
+  },
+  "scripts": {
+    "clean": "del",
+    "compile": "askx compile",
+    "decompile": "askx decompile",
+    "synthesize": "askx synthesize",
+    "deploy": "askx deploy",
+    "export": "askx smapi export-package"
   },
   "license": "ISC",
   "repository": {

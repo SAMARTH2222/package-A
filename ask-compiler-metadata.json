@@ -1,0 +1,7 @@
+{
+  "compile": {
+    "output": {
+      "dir": "./build"
+    }
+  }
+}

@@ -1,7 +1,8 @@
 src/
 *.acdl
-metadata/
-*.lst
-logs/
-*.log
 .ask/
+node_modules/
+package-lock.json
+.DS_Store
+.project
+.settings/
